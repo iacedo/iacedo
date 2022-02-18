@@ -22,17 +22,19 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+
+li {
+  list-style: none;
+}
+
 img,
 picture {
   max-width: 100%;
   display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -46,18 +48,46 @@ select {
   }
 }
 
+/* Variables */
+:root {
+  --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  /* --size-outline: 3px; // Esto es para cambiar el outline del helper */
+}
+
 /* Base */
-div{}
-div h2{}
-div h3{}
-div p{}
-
-div{}
-div img{}
-
-
+body {
+  font-family: var(--font-sans);
+}
 /* Layout */
+.navegacion{
+  height:200px;
+  border: 2px
+}
+.navegacion ul{
+  background-color:cornflowerblue;
+  border: 2px solid black;
+  width:max-content;
+  margin:auto;
 
+}
+.contenedor-banner{
+  background-color:rgb(241, 216, 104);
+  display:block;
+}
+.contenedor-banner div{}
+.contenedor-banner img{
+  width:400px;
+  height:225px;
+  object-fit:cover;
+  display: inline;
+  padding:20px;
+}
 /* Componentes */
 
 /* Utilidades */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
