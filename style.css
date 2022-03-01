@@ -59,29 +59,7 @@ body {
   font-family: var(--font-sans);
 }
 /* Layout */
-.navegacion{
-  height:200px;
-  border: 2px
-}
-.navegacion ul{
-  background-color:cornflowerblue;
-  border: 2px solid black;
-  width:max-content;
-  margin:auto;
 
-}
-.contenedor-banner{
-  background-color:rgb(241, 216, 104);
-  display:block;
-}
-.contenedor-banner div{}
-.contenedor-banner img{
-  width:400px;
-  height:225px;
-  object-fit:cover;
-  display: inline;
-  padding:20px;
-}
 /* Componentes */
 
 /* Utilidades */
