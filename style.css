@@ -98,19 +98,27 @@ picture {
 }
 
 /* Layout */
-.contenedor {
+.contenedor picture {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+
+.contenedor picture img{
+width: 60%;
+padding:25px;
 
 }
 
 /* Componentes */
 .banner {
     max-height: 100vh;
-    --background: rgb(232, 236, 192);
+    --background: rgb(250, 255, 230);
     padding: 1em;
     display: flex;
     flex-direction: column;
